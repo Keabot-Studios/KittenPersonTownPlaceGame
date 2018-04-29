@@ -44,6 +44,8 @@ public class DisplayManager {
 	public void initalize(int width, int height, String title, GLFWKeyCallbackI cbfun) {
 		System.out.println("Intializing LWJGL and GLFW... (" + Version.getVersion() + ")");
 		GLFWErrorCallback.createPrint(System.err).set();
+		
+		
 
 		if ( !glfwInit() )
 			throw new IllegalStateException("Unable to initialize GLFW.");
