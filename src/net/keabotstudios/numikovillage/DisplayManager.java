@@ -23,6 +23,7 @@ import static org.lwjgl.glfw.GLFW.glfwSwapInterval;
 import static org.lwjgl.glfw.GLFW.glfwTerminate;
 import static org.lwjgl.glfw.GLFW.glfwWindowHint;
 import static org.lwjgl.glfw.GLFW.glfwWindowShouldClose;
+import static org.lwjgl.glfw.GLFW.glfwSetWindowShouldClose;
 import static org.lwjgl.system.MemoryStack.stackPush;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
@@ -110,6 +111,12 @@ public class DisplayManager {
 	}
 	
 	public void close() {
+		if(window == NULL)
+			return;
+		glfwSetWindowShouldClose(window, true);
+	}
+	
+	public void destroy() {
 		if(window == NULL)
 			return;
 		glfwDestroyWindow(window);
