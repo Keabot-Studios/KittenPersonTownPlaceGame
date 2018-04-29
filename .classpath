@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/lwjgl-assimp.jar" sourcepath="lib/lwjgl-assimp-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KittenPersonTownPlaceGame/lib/lwjgl-assimp-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="KittenPersonTownPlaceGame/lib/natives"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/lwjgl-glfw.jar" sourcepath="lib/lwjgl-glfw-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KittenPersonTownPlaceGame/lib/lwjgl-glfw-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="KittenPersonTownPlaceGame/lib/natives"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/lwjgl-openal.jar" sourcepath="lib/lwjgl-openal-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KittenPersonTownPlaceGame/lib/lwjgl-openal-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="KittenPersonTownPlaceGame/lib/natives"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/lwjgl-opengl.jar" sourcepath="lib/lwjgl-opengl-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KittenPersonTownPlaceGame/lib/lwjgl-opengl-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="KittenPersonTownPlaceGame/lib/natives"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/lwjgl-stb.jar" sourcepath="lib/lwjgl-stb-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KittenPersonTownPlaceGame/lib/lwjgl-stb-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="KittenPersonTownPlaceGame/lib/natives"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/lwjgl.jar" sourcepath="lib/lwjgl-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/KittenPersonTownPlaceGame/lib/lwjgl-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="KittenPersonTownPlaceGame/lib/natives"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
