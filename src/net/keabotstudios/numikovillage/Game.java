@@ -14,7 +14,7 @@ public class Game {
 
 	private void init() {
 		display = new DisplayManager();
-		display.initalize(1280, 720, "Nu mikko vill ag", this::kCallback);
+		display.initalize(1280, 720, "Numiko Village", this::kCallback);
 	}
 	
 	private void kCallback(long window, int key, int scanCode, int action, int mods) {
@@ -23,6 +23,7 @@ public class Game {
 	}
 	
 	public static void main(String[] args) {
+		System.out.println(add(2, 3));
 		new Game();
 	}
 	
