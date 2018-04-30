@@ -26,8 +26,14 @@ public class Game {
 		new Game();
 	}
 	
+	
+	public static int add(int a, int b) {
+		return a + b;
+	}
+	
+	
 	private void loop() {
-		GL11.glClearColor(1f, 1f, 1f, 1f);
+		GL11.glClearColor(0.5f, 0.5f, 0.5f, 1f);
 		while (!display.shouldClose()) {
 			GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
 			

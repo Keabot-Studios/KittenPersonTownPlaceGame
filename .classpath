@@ -31,7 +31,7 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/KittenPersonTownPlaceGame/lib/lwjgl-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre-10.0.1"/>
 	<classpathentry kind="lib" path="lib/lwjgl-assimp-natives-linux.jar"/>
 	<classpathentry kind="lib" path="lib/lwjgl-assimp-natives-macos.jar"/>
 	<classpathentry kind="lib" path="lib/lwjgl-assimp-natives-windows.jar"/>
