@@ -1,6 +1,7 @@
 package net.keabotstudios.numikovillage;
 
 import org.lwjgl.glfw.GLFW;
+import org.lwjgl.opengl.GL11;
 
 public class Game {
 
@@ -13,7 +14,7 @@ public class Game {
 
 	private void init() {
 		display = new DisplayManager();
-		display.initalize(1280, 720, "Fuck.", this::kCallback);
+		display.initalize(1280, 720, "Nu mikko vill ag", this::kCallback);
 	}
 	
 	private void kCallback(long window, int key, int scanCode, int action, int mods) {
@@ -26,7 +27,10 @@ public class Game {
 	}
 	
 	private void loop() {
+		GL11.glClearColor(1f, 1f, 1f, 1f);
 		while (!display.shouldClose()) {
+			GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
+			
 			display.update();
 		}
 		display.destroy();
