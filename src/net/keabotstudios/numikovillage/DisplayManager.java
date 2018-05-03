@@ -42,22 +42,23 @@ public class DisplayManager {
 	private int width, height;
 
 	public void initalize(int width, int height, String title, GLFWKeyCallbackI cbfun) {
+		long startTime = System.currentTimeMillis();
 		System.out.println("Intializing LWJGL and GLFW... (" + Version.getVersion() + ")");
 		GLFWErrorCallback.createPrint(System.err).set();
-
+		glfwTerminate();
 		if ( !glfwInit() )
 			throw new IllegalStateException("Unable to initialize GLFW.");
-		System.out.println("Initalized GLFW.");
+		System.out.println("Initalized GLFW. Took " + (System.currentTimeMillis() - startTime) + "ms.");
 
 		glfwDefaultWindowHints();
 		glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
 		glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
 		
+		startTime = System.currentTimeMillis();
 		System.out.println("Creating GLFW window...");
 		window = glfwCreateWindow(width, height, title, NULL, NULL);
 		if ( window == NULL )
 			throw new RuntimeException("Failed to create the GLFW window.");
-
 		glfwSetKeyCallback(window, cbfun);
 
 		try ( MemoryStack stack = stackPush() ) {
@@ -84,7 +85,7 @@ public class DisplayManager {
 		glfwShowWindow(window);
 		GL.createCapabilities();
 		
-		System.out.println("Created GLFW window.");
+		System.out.println("Created GLFW window. Took " + (System.currentTimeMillis() - startTime) + "ms.");
 		
 		System.out.println("Initialization complete! Go have fun with some kitties!");
 	}
